@@ -1,0 +1,61 @@
+<!DOCTYPE html>  
+<html lang="en">  
+    <head>  
+        <meta charset="UTF-8" />  
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+        <link rel="stylesheet" href="style.css" />  
+        <title>Cadastro</title>  
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                background-image: linear-gradient(20deg, #91ff00, rgb(72, 132, 192));
+            }
+            input{
+                padding: 10px;
+                outline: none;
+            }
+        </style>
+    </head>  
+    <body>  
+        <script src="index.js"></script>
+        <div class="cadtela">
+
+            <div>
+                <h1>Cadastre-se</h1>
+            </div>
+            
+            <div class="usuario">
+                <input type = "text" id="nome" placeholder = "Nome completo">
+                <label id="labelUsuario" for="usuario"></label>
+            </div>
+            
+            <br>
+
+            <div class="email">
+                <input type = "text" id="Email" placeholder = "E-mail">
+                <label id="labelEmail" for="email"></label>
+            </div>
+            
+            <br>
+            
+            <div class="senha">
+                <input type = "password" id="senha" placeholder = "Senha">     
+                <label id="labelSenha" for="senha"></label>  
+            </div>
+
+            <br>
+            
+            <div class="senha">
+                <input type = "password" id="confirmaSenha" placeholder = "Confirmar senha">      
+                <label id="labelConfSenha" for="senha"></label>  
+ 
+            </div>
+            
+            <br><br>
+            <button class="cadast" id="btn" onclick="cadastrar()">Cadastrar</button>
+
+            <h2>Já possui cadastro<br><a href="index.html"> Acesse a página de login.</a></h2>
+
+        </div>
+    </body>  
+</html>  
